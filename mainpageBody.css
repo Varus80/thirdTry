@@ -1,0 +1,55 @@
+.container{
+    display:grid;
+    width:100vw;
+    height:95vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 1fr ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: visible;
+
+    background-attachment: unset;
+
+}
+
+.slideShow{
+display:flex;
+grid-column: 3/4;
+grid-row: 1/2;
+width:100%;
+height:100%;
+background-color: tomato;
+
+
+}
+
+.slides{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+
+#slide{
+    width:150%;
+    height:100%;
+}
+
+
+@media all and (max-width: 1080px) and (min-width: 0px) {
+    .slideShow{
+        
+        background-color:black;
+       
+    }
+    .container{
+        background-color: tomato;
+    }
+
+    .slides{
+        margin-top: -10vh;
+        justify-content: flex-start;
+    }
+    
+
+  }
